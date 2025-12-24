@@ -498,6 +498,20 @@ const GestureController = ({ onGesture, onMove, onStatus, debugMode }: any) => {
   return (
     <>
       <video ref={videoRef} style={{ opacity: debugMode ? 0.6 : 0, position: 'fixed', top: 0, right: 0, width: debugMode ? '320px' : '1px', zIndex: debugMode ? 100 : -1, pointerEvents: 'none', transform: 'scaleX(-1)' }} playsInline muted autoPlay />
+       <h1
+        style={{
+          position: "absolute",
+          top: "30px",
+          left: "50%",
+          transform: "translateX(-50%)",
+          color: "white",
+          fontSize: "32px",
+          zIndex: 10,
+          fontWeight: "bold",
+        }}
+      >
+        🎄 Chúc Em bé chui Giáng Sinh an lành!☃️
+      </h1>
       <canvas ref={canvasRef} style={{ position: 'fixed', top: 0, right: 0, width: debugMode ? '320px' : '1px', height: debugMode ? 'auto' : '1px', zIndex: debugMode ? 101 : -1, pointerEvents: 'none', transform: 'scaleX(-1)' }} />
     </>
   );
